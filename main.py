@@ -28,9 +28,9 @@ def prediction_plot_scorer(model, x, y):
     i += 1
 
     plt.scatter(x_plot, y, color='black')
-    plt.title(f'Figure {i}')
-    plt.xlabel('Size')
-    plt.ylabel('Price')
+    plt.title(f'Fold {i} - {str(model)}')
+    plt.xlabel('Mean Frequency')
+    plt.ylabel('Centroid')
     plt.xticks(())
     plt.yticks(())
     plt.plot(x_plot, model.predict(x), color='red', linewidth=3)
