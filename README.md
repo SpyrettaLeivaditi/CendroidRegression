@@ -63,7 +63,7 @@ In our code, we execute the following workflow:
 - Then, we normalize the feature values to the range [0,1]  using a MinMax scaler. This is necessary as the different features have different ranges that may negatively affect the classifier.
 - Then, we split the data into train and test sets, with the train set consisting of 80% of the data and the test one of 20%. This splitting is random in every run.
 - Then, we initialize a Logistic Regression model and a Multi Layer Perceptron model.
-- Then, we define the scoring metrics that we want to evaluate the two models with. These are the R2 (coefficient of determination) regression score function, the mean squared error regression loss. and the maximum residual error. We also define a function prediction_plot_scorer that plots the actual and the predicted values of the centroid with respect to the mean frequency feature.
+- Then, we define the scoring metrics that we want to evaluate the two models with. These are the R2 (coefficient of determination) regression score function, the mean squared error regression loss, and the maximum residual error. We also define a function prediction_plot_scorer that plots the actual and the predicted values of the centroid with respect to the mean frequency feature.
 - Then we run and evaluate the two regression models by performing a 10-fold cross-validation. We use cross-validation to ensure our evaluation is not biased from the random splitting of the data. 
 - Finally, we print the average values of the scoring metrics, and plot for each fold the actual and predicted values of the centroid with respect to the mean frequency feature.
 
